@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnydale School</title>
+
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FFFFFF; 
+            color: #353535; 
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f7f7f7; 
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #353535;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #FF6B01; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        
+        .section {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #353535; 
+            border-bottom: 2px solid #FF6B01; 
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            
+        }
+
+        #mission h2 {
+            color: #353535;
+        }
+
+        #upcoming-events h2 {
+            color: #353535;
+
+        }
+        
+        #contact h2 {
+            color: #353535;
+        }
+
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: #FF6B01; 
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .event-date {
+            font-weight: bold;
+            color: #FF6B01; 
+        }
+        
+        .outdoor {
+            background-color: #FFF3E0; 
+            padding: 8px;
+            border-left: 5px solid #FF6B01; 
+            border-radius: 5px; 
+        }
+
+       
+        a {
+            color: #FF6B01; 
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Welcome to Sunnydale School</h1>
+        </header>
+
+        <section class="section">
+            <h2 id="mission">Mission Statement</h2>
+            <p>
+                At Sunnydale School, we are dedicated to providing a nurturing and innovative
+                learning environment that empowers students to achieve their full potential.
+                We foster a community of curious, creative, and compassionate individuals.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 id="upcoming-events">Upcoming Events</h2>
+            <ul>
+                <li> Science Fair - <span class="event-date">June 10</span></li>
+                <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">Art Exhibition - <span class="event-date">June 15</span></li>
+                <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">Sports Day - <span class="event-date">June 20</span></li>
+                <li data-event-type="indoor" title="Event Type: Indoor">Parent-Teacher Conference - <span class="event-date">June 25</span></li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 id="contact">Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:info@sunnydaleschool.edu" title="Click to copy email">info@sunnydaleschool.edu</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+1234567890" title="Click to call phone number">+1 (234) 567-890</a></p>
+                <p><strong>Address:</strong> 123 Learning Lane, Sunnydale</p>
+            </div>
+        </section>
+
+    </div>  
+
+</body>
+</html>
